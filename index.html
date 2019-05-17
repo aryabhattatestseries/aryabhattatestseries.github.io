@@ -11,15 +11,24 @@
         <div id="mainpage">
             <div id="header" class="style1">
                 <h1>Aryabhatta Test Series</h1><br>
-                <button class="btnstyle">Home</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button class="btnstyle">About us</button><br>
+                
+                <table id="menu">
+                    <tr>
+                        <td class="menustyle" id="homebtn" style="background-color: #111111">Home</td>
+                        <td class="menustyle" id="academicsbtn">Academics</td>
+                        <td class="menustyle" id="admissionsbtn">Admissions</td>
+                        <td class="menustyle" id="aboutusbtn">About Us</td>
+                    </tr>
+                </table>
             </div>
             
             
             
             <div id="content">
-                Welcome
+                <div id="homepage" style="display: block">Welcome to HOME</div>
+                <div id="academicspage" style="display: none">ACADEMICS</div>
+                <div id="admissionspage" style="display: none">ADMISSIONS</div>
+                <div id="aboutuspage" style="display: none">ABOUT US</div>
             </div>
             
             
@@ -32,5 +41,6 @@
                     
             </div>
         </div>
+        <script src="pages.js"></script>
     </body>
 </html>

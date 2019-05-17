@@ -5,14 +5,24 @@
     padding: 20px;
 }
 
-.btnstyle{
+.menustyle{
+    cursor: pointer;
     background-color:black;
     color: whitesmoke;
     text-align: center;
-    padding: 12px 20px;
-    font-size: 20px;
     font-family: "Fjalla One";
-    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+}
+
+#header{
+    font-family: "Fjalla One";
+    padding-bottom: 0px;
+}
+
+#menu{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #footer{
@@ -28,7 +38,6 @@
     font-size: 20px;
 }
 
-#header{
-    font-family: "Fjalla One";
-    
+#homebtn{
+    background-color: "#111111";
 }
