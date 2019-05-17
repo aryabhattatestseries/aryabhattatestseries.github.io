@@ -14,7 +14,7 @@ homebtn.addEventListener("click",function(){
     admissions.style.display = "none";
     aboutus.style.display = "none";
     
-    homebtn.style.backgroundColor = "#1e1e1e";
+    homebtn.style.backgroundColor = "#636363";
     academicsbtn.style.backgroundColor = "black";
     admissionsbtn.style.backgroundColor = "black";
     aboutusbtn.style.backgroundColor = "black";
@@ -28,7 +28,7 @@ academicsbtn.addEventListener("click",function(){
     aboutus.style.display = "none";
     
     homebtn.style.backgroundColor = "black";
-    academicsbtn.style.backgroundColor = "#1e1e1e";
+    academicsbtn.style.backgroundColor = "#636363";
     admissionsbtn.style.backgroundColor = "black";
     aboutusbtn.style.backgroundColor = "black";
 });
@@ -41,7 +41,7 @@ admissionsbtn.addEventListener("click",function(){
     
     homebtn.style.backgroundColor = "black";
     academicsbtn.style.backgroundColor = "black";
-    admissionsbtn.style.backgroundColor = "#1e1e1e";
+    admissionsbtn.style.backgroundColor = "#636363";
     aboutusbtn.style.backgroundColor = "black";
 });
 
@@ -54,5 +54,5 @@ aboutusbtn.addEventListener("click",function(){
     homebtn.style.backgroundColor = "black";
     academicsbtn.style.backgroundColor = "black";
     admissionsbtn.style.backgroundColor = "black";
-    aboutusbtn.style.backgroundColor = "#1e1e1e";
+    aboutusbtn.style.backgroundColor = "#636363";
 });
