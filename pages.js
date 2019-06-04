@@ -118,10 +118,7 @@ miscellaneousbtn.addEventListener("click",function(){
 });
 
 
-directorsmsgbtn.addEventListener("click",function(){
-    
-    closemenu();
-    
+directorsmsgbtn.addEventListener("click",function(){    
     homepage.style.display = "none";
     aboutuspage.style.display = "block";
     academicspage.style.display = "none";
