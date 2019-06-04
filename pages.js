@@ -17,6 +17,12 @@ var coachingbtn = document.getElementById("coachingbtn");
 var exambtn = document.getElementById("exambtn");
 var teachersbtn = document.getElementById("teachersbtn");
 
+var staffsalarybtn = document.getElementById("staffsalarybtn");
+var budgetbtn = document.getElementById("budgetbtn");
+
+var admissionschedulebtn = document.getElementById("admissionschedulebtn");
+var admissionnoticebtn = document.getElementById("admissionnoticebtn");
+
 var homepage = document.getElementById("homepage");
 var aboutuspage = document.getElementById("aboutuspage");
 var academicspage = document.getElementById("academicspage");
@@ -33,6 +39,12 @@ var currentnewspage = document.getElementById("curnews");
 var coachingpage = document.getElementById("coachingpage");
 var exampage = document.getElementById("exampage");
 var teacherspage = document.getElementById("teacherspage");
+
+var staffsalarypage = document.getElementById("staffsalarypage");
+var budgetpage = document.getElementById("budgetpage");
+
+var admissionschedulepage = document.getElementById("admissionschedulepage");
+var admissionnoticepage = document.getElementById("admissionnoticepage");
 
 homebtn.addEventListener("click",function(){
     home.style.display = "block";
@@ -107,6 +119,9 @@ miscellaneousbtn.addEventListener("click",function(){
 
 
 directorsmsgbtn.addEventListener("click",function(){
+    
+    closemenu();
+    
     homepage.style.display = "none";
     aboutuspage.style.display = "block";
     academicspage.style.display = "none";
@@ -220,9 +235,60 @@ teachersbtn.addEventListener("click",function(){
     teacherspage.style.display = "block";
 });
 
+staffsalarybtn.addEventListener("click",function(){
+    homepage.style.display = "none";
+    aboutuspage.style.display = "none";
+    academicspage.style.display = "none";
+    financepage.style.display = "block";
+    admissionspage.style.display="none";
+    miscellaneouspage.style.display = "none";
+    
+    staffsalarypage.style.display = "block";
+    budgetpage.style.display = "none";
+});
+
+budgetbtn.addEventListener("click",function(){
+    homepage.style.display = "none";
+    aboutuspage.style.display = "none";
+    academicspage.style.display = "none";
+    financepage.style.display = "block";
+    admissionspage.style.display="none";
+    miscellaneouspage.style.display = "none";
+    
+    staffsalarypage.style.display = "none";
+    budgetpage.style.display = "block";
+});
+
+admissionschedulebtn.addEventListener("click",function(){
+    homepage.style.display = "none";
+    aboutuspage.style.display = "none";
+    academicspage.style.display = "none";
+    financepage.style.display = "none";
+    admissionspage.style.display="block";
+    miscellaneouspage.style.display = "none";
+    
+    admissionschedulepage.style.display = "block";
+    admissionnoticepage.style.display = "none";
+});
+
+admissionnoticebtn.addEventListener("click",function(){
+    homepage.style.display = "none";
+    aboutuspage.style.display = "none";
+    academicspage.style.display = "none";
+    financepage.style.display = "none";
+    admissionspage.style.display="block";
+    miscellaneouspage.style.display = "none";
+    
+    admissionschedulepage.style.display = "none";
+    admissionnoticepage.style.display = "block";
+});
 
 window.onclick = function(event) {
-  if (!event.target.matches('.menustyle')) {
+   closemenu();
+}
+
+function closemenu(){
+    if (!event.target.matches('.menustyle')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -231,7 +297,7 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
       }
     }
-      homebtn.style.backgroundColor = "black";
+    homebtn.style.backgroundColor = "black";
     aboutusbtn.style.backgroundColor = "black";
     academicsbtn.style.backgroundColor = "black";
     financebtn.style.backgroundColor = "black";
