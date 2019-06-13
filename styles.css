@@ -1,3 +1,9 @@
+body{
+    background-image: url(images/bg3.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
 #topdiv{
     background-color: black;
     color: whitesmoke;
@@ -74,6 +80,17 @@ li{
 .show {display: block;}
 
 
+#content{
+    padding: 20px;
+    font-family: "Roboto Condensed";
+    min-height: 80%;
+    font-size: 16px;
+}
+
+.indent{
+    text-indent: 50px;
+}
+
 #footer{
     background-color: black;
     color: whitesmoke;
@@ -81,12 +98,4 @@ li{
     padding: 20px;
     font-family: "Roboto Condensed";
     font-size: 16px;
-    
-}
-
-#content{
-    padding: 20px;
-    font-family: "Roboto Condensed";
-    min-height: 80%;
-    font-size: 18px;
 }
