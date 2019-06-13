@@ -23,6 +23,8 @@ var budgetbtn = document.getElementById("budgetbtn");
 var admissionschedulebtn = document.getElementById("admissionschedulebtn");
 var admissionnoticebtn = document.getElementById("admissionnoticebtn");
 
+//var photogalarybtn = document.getElementById("photogalarybtn");
+
 var homepage = document.getElementById("homepage");
 var aboutuspage = document.getElementById("aboutuspage");
 var academicspage = document.getElementById("academicspage");
@@ -279,6 +281,8 @@ admissionnoticebtn.addEventListener("click",function(){
     admissionschedulepage.style.display = "none";
     admissionnoticepage.style.display = "block";
 });
+
+
 
 window.onclick = function(event) {
    closemenu();
